@@ -6,6 +6,21 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const mongoose = require("mongoose");
+const winston = require("winston");
+
+// Create custom logger to keep track of error and exception logs
+const logger = winston.createLogger({
+  level: "info",
+  transports: [
+    new winston.transports.Console({
+      format: winston.format.combine(winston.format.colorize({ all: true })),
+    }),
+    new winston.transports.File({ filename: "error.log", level: "error" }),
+  ],
+  exceptionHandlers: [
+    new winston.transports.File({ filename: "exception.log" }),
+  ],
+});
 
 // Connecting to MongoDB Databse
 mongoose
@@ -14,10 +29,10 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("Connected to MongoDB Atlas");
+    logger.info("Connected to MongoDB Atlas");
   })
   .catch((err) => {
-    console.log("Connecting error. Try again", err);
+    logger.error(err.message);
   });
 
 // Middleware
@@ -30,6 +45,7 @@ app.use(express.urlencoded({ extended: true }));
 const animeRouter = require("./routes/anime");
 app.use("/anime", animeRouter);
 
+// Start server
 app.listen(PORT, () => {
-  console.log("Server has started"), PORT;
+  logger.info(`Server has started at PORT ${PORT}`);
 });
