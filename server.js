@@ -1,5 +1,5 @@
 // Required to connect to dotenv
-require("dotenv").config();
+// require("dotenv").config();
 
 // Express and mongoose
 const express = require("express");
