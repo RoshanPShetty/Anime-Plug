@@ -4,11 +4,11 @@
 <a href="http://your-anime-senpai.herokuapp.com/" target="_blank">Explore the API >></a>
 
 # Table of Contents
-1. About
-2. Background
-3. Support
-4. Contributing
-5. Copyright
+1. [About](https://github.com/RoshanPShetty/Anime-Senpai/blob/master/README.md#about)
+2. [Background](https://github.com/RoshanPShetty/Anime-Senpai/blob/master/README.md#background)
+3. [Support](https://github.com/RoshanPShetty/Anime-Senpai/blob/master/README.md#support)
+4. [Contributing](https://github.com/RoshanPShetty/Anime-Senpai/blob/master/README.md#contributing)
+5. [Copyright](https://github.com/RoshanPShetty/Anime-Senpai/blob/master/README.md#Copyright)
 
 # About
 Anime Senpai is an open source REST API created that serves thousands of underrated anime. It is built with:
