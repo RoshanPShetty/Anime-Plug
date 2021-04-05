@@ -17,6 +17,8 @@ Anime Senpai is an open source REST API created that serves thousands of underra
 * [Express](https://expressjs.com/) 
 * [MongoDB](https://www.mongodb.com/cloud/atlas) 
 
+>Join the [Discord Server](https://discord.gg/CJ34vpzU) for upcoming updates or to just say Hi. 
+
 # Background
 I started Anime Senpai as a side project in first week of April, 2021 because of 
 the frustration of not finding a single API service that provides underrated anime. 
