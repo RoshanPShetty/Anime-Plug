@@ -7,6 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const mongoose = require("mongoose");
 
+// Connecting to MongoDB Databse
 mongoose
   .connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
@@ -19,15 +20,15 @@ mongoose
     console.log("Connecting error. Try again", err);
   });
 
-// const db = mongoose.connection
+// Middleware
+app.use(express.json());
 
-// db.on('error', (error) => console.error(error))
-// db.once('open', () => console.log('Connected to Database'))
+// Allows the use of arrays, objects, etc
+app.use(express.urlencoded({ extended: true }));
 
-// app.use(express.json())
-
-// const animeRouter = require('./routes/anime')
-// app.use('/anime', animeRouter)
+// Routes
+const animeRouter = require("./routes/anime");
+app.use("/anime", animeRouter);
 
 app.listen(PORT, () => {
   console.log("Server has started"), PORT;
