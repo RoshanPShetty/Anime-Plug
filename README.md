@@ -1,5 +1,6 @@
 
 ### Anime-Senpai {style=text-align:center}
+$$\text{This is some centered text}$$
 An open source REST API serving underrated anime. <br>
 [Explore the API >>](http://your-anime-senpai.herokuapp.com/)
 
