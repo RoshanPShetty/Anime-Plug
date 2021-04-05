@@ -1,8 +1,8 @@
 ###
 <p align="center"> Anime-Senpai
 <p align="center">An open source REST API serving underrated anime. 
-  
-                                        [Explore the API >>](http://your-anime-senpai.herokuapp.com/) 
+
+<div align="center">[Explore the API >>](http://your-anime-senpai.herokuapp.com/) 
 
 # Table of Contents
 1. About
@@ -12,7 +12,7 @@
 5. Copyright
 
 # About
-Anime Senpai is an open source REST API created that servers thousands of underrated anime. It is built with:
+Anime Senpai is an open source REST API created that serves thousands of underrated anime. It is built with:
 
 * [Node](https://nodejs.org/en/)
 * [Express](https://expressjs.com/) 
