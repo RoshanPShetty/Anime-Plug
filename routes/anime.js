@@ -34,8 +34,12 @@ router.get("/", (req, res) => {
   });
 
   // GET: GETTING ONE ANIME BASED ON ITS ID
-  router.get("/:id", getAnime, (req, res) => {
-    res.send(res.anime);
+  router.get("/:id", async (req, res) => {
+    const anime = await Anime.findById(req.params.id);
+    if (!anime) {
+      res.status(404).json({ message: "Anime not found" });
+    }
+    res.send(anime);
   });
 
   // PUT: UPDATING AN ANIME BASED ON ITS ID
@@ -63,28 +67,12 @@ router.get("/", (req, res) => {
   });
 
   // DELETE: DELETING AN ANIME BASED ON ITS ID
-  router.delete("/:id", getAnime, async (req, res) => {
-    try {
-      await res.anime.remove();
-      res.json({ message: "Anime Deleted" });
-    } catch (err) {
-      res.status(500).json({ message: err.message });
+  router.delete("/:id", async (req, res) => {
+    const anime = await Anime.findByIdAndRemove(req.params.id);
+    if(!anime) {
+      res.status(404).json({ message: "Anime not found" });
     }
+    res.send(anime)
   });
-
-  // MIDDLEWARE
-  async function getAnime(req, res, next) {
-    try {
-      anime = await Anime.findById(req.params.id);
-      if (anime == null) {
-        return res.status(404).json({ message: "Anime not found" });
-      }
-    } catch (err) {
-      return res.status(500).json({ message: err.message });
-    }
-
-    res.anime = anime;
-    next();
-  }
 
   module.exports = router;
