@@ -43,7 +43,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 const animeRouter = require("./routes/anime");
-app.use("/anime", animeRouter);
+app.use("api/anime", animeRouter);
 
 // Start server
 app.listen(PORT, () => {
