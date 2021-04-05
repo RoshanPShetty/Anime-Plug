@@ -1,8 +1,7 @@
-[![](https://s18955.pcdn.co/wp-content/uploads/2018/02/github.png)](https://github.com/RoshanPShetty/Anime-Senpai/subscription)
 
-### Anime-Senpai
+<center>### Anime-Senpai
 An open source REST API serving underrated anime. <br>
-[Explore the API >>](http://your-anime-senpai.herokuapp.com/)
+[Explore the API >>](http://your-anime-senpai.herokuapp.com/)</center>
 
 # Table of Contents
 1. About
