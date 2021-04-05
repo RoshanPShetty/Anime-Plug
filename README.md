@@ -1,6 +1,8 @@
 ###
-<p align="center"> Anime-Senpai <br>
+<p align="center"> Anime-Senpai 
+  
 An open source REST API serving underrated anime. </p>
+
 [Explore the API >>](http://your-anime-senpai.herokuapp.com/)
 
 # Table of Contents
