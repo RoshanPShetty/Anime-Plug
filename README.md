@@ -30,7 +30,7 @@ This project is completely free to use and it's solely maintained by me, from fr
 
 # Contributing
 * For new anime requests [please add a comment here.](https://github.com/RoshanPShetty/Anime-Senpai/issues/1)
-* And for any bug or features requests, Submit an issue here.
+* And for any bug or features requests, [submit an issue here](https://github.com/RoshanPShetty/Anime-Senpai/issues).
 
 # Copyright
 Copyright © [Roshan Praveen Shetty](https://roshanpshetty.github.io/) 2021
