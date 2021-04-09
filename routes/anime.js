@@ -8,14 +8,8 @@ router.post("/", async (req, res) => {
   if (err.message) res.status(400).send(err.message);
 
   const nanime = new Anime({
-    sources: req.body.sources,
     title: req.body.title,
-    type: req.body.type,
-    episodes: req.body.episodes,
-    status: req.body.status,
-    year: req.body.year,
-    synonyms: req.body.synonyms,
-    tags: req.body.tags,
+    source: req.body.source,
     rating: req.body.rating,
   });
 
@@ -50,14 +44,8 @@ router.put("/:id", async (req, res) => {
   const updateAnime = await Anime.findByIdAndUpdate(
     req.params.id,
     {
-      sources: req.body.sources,
       title: req.body.title,
-      type: req.body.type,
-      episodes: req.body.episodes,
-      status: req.body.status,
-      year: req.body.year,
-      synonyms: req.body.synonyms,
-      tags: req.body.tags,
+      source: req.body.source,
       rating: req.body.rating,
     },
     { new: true }
