@@ -1,6 +1,6 @@
 ###
 <p align = "center">
-  <img src = "https://media.giphy.com/media/Y01jP8QeLOox2/giphy.gif", width=250 height=150>
+  <img src = "https://media.giphy.com/media/Y01jP8QeLOox2/giphy.gif", width=200 height=150>
 </p>
 <p align="center"> Anime-Senpai
 <p align="center">An open source REST API serving underrated anime. 
