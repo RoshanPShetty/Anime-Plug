@@ -1,5 +1,7 @@
 ###
-![Pikachu](https://www.pexels.com/photo/close-up-photo-of-pokemon-pikachu-figurine-1716861/)
+<p align = "center">
+  <img src = "https://media.giphy.com/media/Y01jP8QeLOox2/giphy.gif">
+</p>
 <p align="center"> Anime-Senpai
 <p align="center">An open source REST API serving underrated anime. 
 <a href="http://your-anime-senpai.herokuapp.com/" target="_blank">Explore the API >></a>
