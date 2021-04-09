@@ -4,7 +4,7 @@
 </p>
 <p align = "center"> <b> Anime Senpai </b></p>
 <p align="center">An open source REST API serving underrated anime. </p>
-<a href="http://your-anime-senpai.herokuapp.com/" target="_blank">Explore the API >></a>
+<p align="center"><a href="http://your-anime-senpai.herokuapp.com/" target="_blank">Explore the API >></a> </p>
 
 # Table of Contents
 1. [About](https://github.com/RoshanPShetty/Anime-Senpai/blob/master/README.md#about)
