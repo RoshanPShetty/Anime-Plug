@@ -2,7 +2,7 @@
 <p align = "center">
   <img src = "https://media.giphy.com/media/Y01jP8QeLOox2/giphy.gif", width=200 height=150>
 </p>
-<h4 align = "center"> <b> Anime Senpai </b></h4>
+<p align = "center"> <b> Anime Senpai </b></p>
 <p align="center">An open source REST API serving underrated anime. 
 <a href="http://your-anime-senpai.herokuapp.com/" target="_blank">Explore the API >></a>
 
