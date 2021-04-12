@@ -14,7 +14,7 @@
 5. [Copyright](https://github.com/RoshanPShetty/Anime-Senpai/blob/master/README.md#Copyright)
 
 # About
-Anime Senpai is an open source REST API created that serves thousands of underrated anime. It is built with:
+Anime Plug is an open source REST API created that serves thousands of underrated anime. It is built with:
 
 * [Node](https://nodejs.org/en/)
 * [Express](https://expressjs.com/) 
@@ -23,9 +23,9 @@ Anime Senpai is an open source REST API created that serves thousands of underra
 >Join the [Discord Server](https://discord.gg/CJ34vpzU) for upcoming updates or to just say Hi. 
 
 # Background
-I started Anime Senpai as a side project in first week of April, 2021 because of 
+I started Anime Plug as a side project in first week of April, 2021 because of 
 the frustration of not finding a single API service that provides underrated anime. 
-So I created Anime Senpai that would help the community to feel some underappreciated works of art. 
+So I created Anime Plug that would help the community to feel some underappreciated works of art. 
 I created the entire API from scratch.
 
 # Support
