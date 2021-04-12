@@ -31,8 +31,17 @@ router.get("/", (req, res) => {
 });
 
 // GET: GETTING ONE ANIME BASED ON ITS ID
-router.get("/:id", async (req, res) => {
+router.get("/:id", (req, res) => {
   const anime = await Anime.findById(req.params.id);
+  if (!anime) {
+    res.status(404).json({ message: "Anime not found" });
+  }
+  res.send(anime);
+});
+
+// GET: GETTING ONE RANDOM ANIME 
+router.get("/random", async (req, res) => {
+  const anime = await Anime.find().then((anime) => res.send(anime[Math.floor((Math.random * 100) + 1)]));
   if (!anime) {
     res.status(404).json({ message: "Anime not found" });
   }
