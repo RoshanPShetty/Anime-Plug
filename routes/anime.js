@@ -39,7 +39,7 @@ router.get("/:id", (req, res) => {
   res.send(anime);
 });
 
-// GET: GETTING ONE RANDOM ANIME 
+// GET: GETTING ONE RANDOM ANIME FROM THE DATABASE
 router.get("/random", async (req, res) => {
   const anime = await Anime.find().then((anime) => res.send(anime[Math.floor((Math.random * 100) + 1)]));
   if (!anime) {
